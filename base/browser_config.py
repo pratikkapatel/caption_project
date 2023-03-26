@@ -1,6 +1,5 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 
 
 class WebDriverWrapper:
@@ -11,6 +10,6 @@ class WebDriverWrapper:
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.implicitly_wait(20)
-        self.driver.get("https://www.bamboohr.com/")
+        self.driver.get("https://selenium.pingboard.com")
         yield
         self.driver.quit()

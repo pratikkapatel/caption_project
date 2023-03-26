@@ -1,19 +1,9 @@
 from utils import read_utils
 
-# test_invalid_login_data = [("einfochips", "Invalid credentials"),("einfochips123", "Invalid credentials")
-# ]
-#
-# test_invalid_login_data1 = [
-#      ["einfochips", "Invalid credentials"],
-#      ["einfochips123", "Invalid credentials"],
-# ]
-#
-# test_add_valid_hr_data = [
-# #      ["het", "het123", "het@gmail.com", "software", "einfo", "0000000000"],
-# #      ["heta", "heta123", "heta@gmail.com", "software1", "einfo1", "3400000000"]
-# # ]
+test_add_valid_employee_data = [
+    ["tobi.mylan2@gmail.com", "Tobi@2020", "John Wick", "wick@gmail.com", "Engineer"]]
 
-test_invalid_login_data = read_utils.get_csv_as_list("../test_data/valid_login_data.csv")
 
-test_add_valid_hr_data = read_utils.get_sheet_as_list("../test_data/HR_test_data.xlsx",
-                                                            "test_add_valid_hr")
+# test_add_valid_employee_data = read_utilites.get_sheet_as_list("../test_data/selenium.xlsx", "test_add_valid_employee")
+# test_invalid_profile_upload_data = read_utilites.get_sheet_as_list("../test_data/selenium.xlsx","test_invalid_profile_upload")
+test_invalid_login_data = read_utils.get_csv_as_list("../test_data/test_invalidLogin.csv")
